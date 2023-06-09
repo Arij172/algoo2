@@ -1,0 +1,15 @@
+ALGORITHM insertion_sort_algo
+PROCEDURE insertion_sort(VAR tab:ARRAY_OF INTEGER)
+VAR
+    i,j:INTEGER;
+
+BEGIN
+    FOR i FROM 1 TO (tab.lenght-1) STEP 1 DO
+        j=i-1;
+        WHILE (j>=0 and tab[j]>tab[i]) DO
+            tab[j+1]=tab[j];
+            j=j-1
+        END_WHILE
+        tab[j+1]=tab[i]
+    END_FOR
+END
