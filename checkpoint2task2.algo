@@ -4,7 +4,7 @@ VAR
     i,j:INTEGER;
 
 BEGIN
-    FOR i FROM 1 TO (tab.lenght-1) STEP 1 DO
+    FOR i FROM 0 TO (tab.lenght-1) STEP 1 DO
         j=i-1;
         WHILE (j>=0 and tab[j]>tab[i]) DO
             tab[j+1]=tab[j];
